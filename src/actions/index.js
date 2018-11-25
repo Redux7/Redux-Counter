@@ -10,9 +10,17 @@ export const DECREMENT = 'DECREMENT';
 // is left to the reducer(s).
 
 export const increment = () => {
-  // Fill in this function
+  console.log('fire increment')
+  return {
+    type: INCREMENT,
+    payload: 1
+  }
 };
 
 export const decrement = () => {
-  // Fill in this function
+  console.log('fire decrement')
+  return {
+    type: DECREMENT,
+    payload: -1
+  }
 };
