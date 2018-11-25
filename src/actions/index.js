@@ -1,6 +1,3 @@
-export const INCREMENT = 'INCREMENT';
-export const DECREMENT = 'DECREMENT';
-
 // Our action creators will return
 // an action packet that our reducer will
 // receive. What does the action packet look like?
@@ -12,7 +9,7 @@ export const DECREMENT = 'DECREMENT';
 export const increment = () => {
   console.log('fire increment')
   return {
-    type: INCREMENT,
+    type: 'INCREMENT',
     payload: 1
   }
 };
@@ -20,7 +17,7 @@ export const increment = () => {
 export const decrement = () => {
   console.log('fire decrement')
   return {
-    type: DECREMENT,
+    type: 'DECREMENT',
     payload: -1
   }
 };

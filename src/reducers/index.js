@@ -1,4 +1,3 @@
-import { INCREMENT, DECREMENT } from '../actions';
 
 const initialState = {
   count: 0
@@ -11,10 +10,10 @@ const initialState = {
 // need to do with the count in each case?
 export default (state = initialState, action) => {
   switch (action.type) {
-    case INCREMENT:
+    case 'INCREMENT':
       console.log("in reduser " + JSON.stringify(state.count))
       return { ...state, count: state.count + action.payload }
-    case DECREMENT:
+    case 'DECREMENT':
       console.log("in reduser " + JSON.stringify(state.count))
       return { ...state, count: state.count + action.payload }
     // Fill in the body of this case
