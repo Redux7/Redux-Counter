@@ -20,10 +20,11 @@ class Counter extends Component {
         return (
             <p>
                 Clicked: {this.props.count} times
-                <button onClick={() => increment() }>
+                {/* <button onClick={() => increment() }>  if call the function without this.props it fires but don't reach reducer */}
+                <button onClick={() => this.props.increment() }>
                     +
                 </button>
-                <button onClick={() => decrement() }>
+                <button onClick={() => this.props.decrement() }>
                     -
                 </button>
                  {/* Uncomment these button tags if you got
