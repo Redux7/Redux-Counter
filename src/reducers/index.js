@@ -12,10 +12,11 @@ const initialState = {
 export default (state = initialState, action) => {
   switch (action.type) {
     case INCREMENT:
-      console.log("in reduser" + JSON.stringify(state.count))
-      return { ...state, count: 2 }
+      console.log("in reduser " + JSON.stringify(state.count))
+      return { ...state, count: state.count + action.payload }
     case DECREMENT:
-      console.log("in reduser")
+      console.log("in reduser " + JSON.stringify(state.count))
+      return { ...state, count: state.count + action.payload }
     // Fill in the body of this case
     default:
       return state;
