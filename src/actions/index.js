@@ -21,3 +21,11 @@ export const decrement = () => {
     payload: -1
   }
 };
+
+export const incrementEven = () => {
+  console.log("hi")
+  return {
+    type: 'INCREMENTEVEN',
+    payload: 1
+  }
+};

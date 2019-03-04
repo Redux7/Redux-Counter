@@ -1,4 +1,3 @@
-
 const initialState = {
   count: 0
 }
@@ -15,6 +14,9 @@ export default (state = initialState, action) => {
       return { ...state, count: state.count + action.payload }
     case 'DECREMENT':
       console.log("in reduser " + JSON.stringify(state.count))
+      return { ...state, count: state.count + action.payload }
+    case 'INCREMENTEVEN':
+      console.log("in reduser if even " + JSON.stringify(state.count))
       return { ...state, count: state.count + action.payload }
     default:
       return state;
